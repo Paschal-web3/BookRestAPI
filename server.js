@@ -13,10 +13,10 @@ const port = 3000
 const MONGOURI = process.env.MONGO_URI
 
 //Connect to MongoDB Atlas
-mongoose.connect(MONGOURI, ).then(()=>{
-    console.log("connected to mongoDB", error)
+mongoose.connect(MONGOURI).then(()=>{
+    console.log("connected to mongoDB")
 }).catch(error => {
-    console.log("Something went wrong, unable to connect") //This is a catch error
+    console.log("Something went wrong, unable to connect", error) //This is a catch error
 })
 
 

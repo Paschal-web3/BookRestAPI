@@ -17,5 +17,20 @@
 
 ### Objective 3 
 1. Setting up your github account
-//We are telling git not to punlish node modules and .env
+//We are telling git not to publish node modules and .env
 (gitignore) 
+2. git init (must have git installed)
+3. git remote add origin (repository url)
+4. git add * 
+5. git commit -m "setup"
+6. git push origin master  (pushes to the url)
+
+### Objective 4
+1. Create model folder
+2. inside the model, create your book.js 
+3. create your book schema, install mongoose (it contains all necessary information about the book)
+4. create a route folder
+5. create book.js 
+6. import express create a POST method, where you allow users to post their book (following the mongoose convention)
+7. Install post man 
+8. Testing 
