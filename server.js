@@ -2,15 +2,17 @@ const express = require ('express')
 const mongoose = require('mongoose')
 const app = express()
 require ('dotenv').config()
-
-
 const port = 3000
-
-// app.get('/', (req, res)=>{
-//     res.send(" Sent to browser")
-// })
-
 const MONGOURI = process.env.MONGO_URI
+const bookRoute = require('./routes/book')
+
+
+// Middleware
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
+
+//Routes 
+app.use(`api/books`, bookRoute)
 
 //Connect to MongoDB Atlas
 mongoose.connect(MONGOURI).then(()=>{

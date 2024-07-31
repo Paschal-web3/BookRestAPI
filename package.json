@@ -9,10 +9,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "1. Create a server \r 2. Test the Server\r 3. Get responses \r 4. Check if server is okay and working",
   "dependencies": {
     "dotenv": "^16.4.5",
+    "express": "^4.19.2",
     "mongoose": "^8.5.1",
     "nodemon": "^3.1.4"
-  }
+  },
+  "devDependencies": {}
 }

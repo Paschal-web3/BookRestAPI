@@ -8,8 +8,11 @@ const BookSchema = new mongoose.Schema({
         minlength: 3, 
         maxlength: 50
     },
-    author: Author
-    ,
+    author: {
+    type: Author.schema,
+    required: true
+    },
+
     genre:{
         type: String,
         required: true,
@@ -19,4 +22,4 @@ const BookSchema = new mongoose.Schema({
     }
 })
 
-module.exports = new BookSchema.model('Book', BookSchema)
+module.exports = mongoose.model('Book', BookSchema)
