@@ -1,5 +1,6 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
+//AUTHOR SCHEMA
 const AuthorSchema = new mongoose.Schema({
     name: { 
         type: String,
@@ -12,5 +13,6 @@ const AuthorSchema = new mongoose.Schema({
         min: 10,
         max: 100
     }
-})
-module.exports = new mongoose.model('Author', AuthorSchema)
+});
+
+module.exports = new mongoose.model('Author', AuthorSchema);
