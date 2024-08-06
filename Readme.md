@@ -1,6 +1,4 @@
-Here's an updated README for your Book Management API project, incorporating your objectives and correcting any grammatical errors:
 
----
 
 # Book Management API
 
@@ -139,5 +137,3 @@ Use Postman to test the API endpoints. Ensure that the server is running and con
 This project provided a comprehensive learning experience in building a RESTful API with Node.js, Express, MongoDB, and Mongoose. By completing this project, I gained valuable skills in server setup, database integration, API development, and testing.
 
 ---
-
-Feel free to modify this README further based on your preferences or additional details you want to include.
